@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'elementProductInCartRuSDHf.ui'
+## Form generated from reading UI file 'elementProductInCartLeZvgj.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -100,12 +100,14 @@ class Ui_elementProduct(object):
         self.productName = QLabel(self.frame_4)
         self.productName.setObjectName(u"productName")
         self.productName.setMinimumSize(QSize(350, 0))
+        self.productName.setAlignment(Qt.AlignCenter)
         self.productName.setWordWrap(True)
 
-        self.horizontalLayout_6.addWidget(self.productName)
+        self.horizontalLayout_6.addWidget(self.productName, 0, Qt.AlignHCenter|Qt.AlignVCenter)
 
         self.productCost = QLabel(self.frame_4)
         self.productCost.setObjectName(u"productCost")
+        self.productCost.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_6.addWidget(self.productCost)
 

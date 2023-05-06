@@ -688,7 +688,7 @@ QScrollBar:horizontal {
                         <rect>
                          <x>0</x>
                          <y>0</y>
-                         <width>524</width>
+                         <width>470</width>
                          <height>585</height>
                         </rect>
                        </property>
@@ -704,8 +704,8 @@ QScrollBar:horizontal {
                      <widget class="QFrame" name="frame_4">
                       <property name="maximumSize">
                        <size>
-                        <width>16777215</width>
-                        <height>200</height>
+                        <width>300</width>
+                        <height>400</height>
                        </size>
                       </property>
                       <property name="frameShape">
@@ -724,14 +724,45 @@ QScrollBar:horizontal {
                           <enum>QFrame::Raised</enum>
                          </property>
                          <layout class="QVBoxLayout" name="verticalLayout_4">
-                          <item>
-                           <widget class="QLabel" name="label_2">
-                            <property name="text">
-                             <string>TextLabel</string>
+                          <item alignment="Qt::AlignLeft">
+                           <widget class="QFrame" name="frame_16">
+                            <property name="frameShape">
+                             <enum>QFrame::StyledPanel</enum>
                             </property>
+                            <property name="frameShadow">
+                             <enum>QFrame::Raised</enum>
+                            </property>
+                            <layout class="QHBoxLayout" name="horizontalLayout_15">
+                             <property name="leftMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="topMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="rightMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="bottomMargin">
+                              <number>0</number>
+                             </property>
+                             <item alignment="Qt::AlignLeft">
+                              <widget class="QLabel" name="label_2">
+                               <property name="text">
+                                <string>Количество товаров:</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLabel" name="countProductsInCart">
+                               <property name="text">
+                                <string>0</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
                            </widget>
                           </item>
-                          <item>
+                          <item alignment="Qt::AlignLeft">
                            <widget class="QFrame" name="frame_8">
                             <property name="frameShape">
                              <enum>QFrame::StyledPanel</enum>
@@ -740,6 +771,9 @@ QScrollBar:horizontal {
                              <enum>QFrame::Raised</enum>
                             </property>
                             <layout class="QHBoxLayout" name="horizontalLayout_6">
+                             <property name="spacing">
+                              <number>10</number>
+                             </property>
                              <property name="leftMargin">
                               <number>0</number>
                              </property>
@@ -752,19 +786,94 @@ QScrollBar:horizontal {
                              <property name="bottomMargin">
                               <number>0</number>
                              </property>
-                             <item>
+                             <item alignment="Qt::AlignLeft">
                               <widget class="QLabel" name="label_3">
                                <property name="text">
-                                <string>TextLabel</string>
+                                <string>К оплате:</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item alignment="Qt::AlignLeft">
+                              <widget class="QLabel" name="cost">
+                               <property name="text">
+                                <string>0.0</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QFrame" name="frame">
+                            <property name="frameShape">
+                             <enum>QFrame::StyledPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                             <enum>QFrame::Raised</enum>
+                            </property>
+                            <layout class="QHBoxLayout" name="horizontalLayout_14">
+                             <property name="spacing">
+                              <number>10</number>
+                             </property>
+                             <property name="leftMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="topMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="rightMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="bottomMargin">
+                              <number>0</number>
+                             </property>
+                             <item>
+                              <widget class="QLabel" name="address">
+                               <property name="text">
+                                <string>Адрес:</string>
                                </property>
                               </widget>
                              </item>
                              <item>
-                              <widget class="QLabel" name="label_4">
+                              <widget class="QLabel" name="label">
                                <property name="text">
-                                <string>TextLabel</string>
+                                <string>255 Maine Street Brunswick ME 04011 USA</string>
                                </property>
                               </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QFrame" name="frame_15">
+                            <property name="frameShape">
+                             <enum>QFrame::StyledPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                             <enum>QFrame::Raised</enum>
+                            </property>
+                            <layout class="QVBoxLayout" name="verticalLayout_2">
+                             <property name="leftMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="topMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="rightMargin">
+                              <number>0</number>
+                             </property>
+                             <property name="bottomMargin">
+                              <number>0</number>
+                             </property>
+                             <item>
+                              <widget class="QLabel" name="label_9">
+                               <property name="text">
+                                <string>Email:</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QLineEdit" name="lineEdit"/>
                              </item>
                             </layout>
                            </widget>

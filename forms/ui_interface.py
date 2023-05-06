@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceOiFEFk.ui'
+## Form generated from reading UI file 'interfaceyuAgei.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -472,7 +472,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaProductsInCart = QWidget()
         self.scrollAreaProductsInCart.setObjectName(u"scrollAreaProductsInCart")
-        self.scrollAreaProductsInCart.setGeometry(QRect(0, 0, 524, 585))
+        self.scrollAreaProductsInCart.setGeometry(QRect(0, 0, 470, 585))
         self.horizontalLayout_2 = QHBoxLayout(self.scrollAreaProductsInCart)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.productsCartLayout = QVBoxLayout()
@@ -486,7 +486,7 @@ class Ui_MainWindow(object):
 
         self.frame_4 = QFrame(self.frame_3)
         self.frame_4.setObjectName(u"frame_4")
-        self.frame_4.setMaximumSize(QSize(16777215, 200))
+        self.frame_4.setMaximumSize(QSize(300, 400))
         self.frame_4.setFrameShape(QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QFrame.Raised)
         self.verticalLayout_5 = QVBoxLayout(self.frame_4)
@@ -497,30 +497,87 @@ class Ui_MainWindow(object):
         self.frame_6.setFrameShadow(QFrame.Raised)
         self.verticalLayout_4 = QVBoxLayout(self.frame_6)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
-        self.label_2 = QLabel(self.frame_6)
+        self.frame_16 = QFrame(self.frame_6)
+        self.frame_16.setObjectName(u"frame_16")
+        self.frame_16.setFrameShape(QFrame.StyledPanel)
+        self.frame_16.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_15 = QHBoxLayout(self.frame_16)
+        self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
+        self.horizontalLayout_15.setContentsMargins(0, 0, 0, 0)
+        self.label_2 = QLabel(self.frame_16)
         self.label_2.setObjectName(u"label_2")
 
-        self.verticalLayout_4.addWidget(self.label_2)
+        self.horizontalLayout_15.addWidget(self.label_2, 0, Qt.AlignLeft)
+
+        self.countProductsInCart = QLabel(self.frame_16)
+        self.countProductsInCart.setObjectName(u"countProductsInCart")
+
+        self.horizontalLayout_15.addWidget(self.countProductsInCart)
+
+
+        self.verticalLayout_4.addWidget(self.frame_16, 0, Qt.AlignLeft)
 
         self.frame_8 = QFrame(self.frame_6)
         self.frame_8.setObjectName(u"frame_8")
         self.frame_8.setFrameShape(QFrame.StyledPanel)
         self.frame_8.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_6 = QHBoxLayout(self.frame_8)
+        self.horizontalLayout_6.setSpacing(10)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.horizontalLayout_6.setContentsMargins(0, 9, 0, 0)
         self.label_3 = QLabel(self.frame_8)
         self.label_3.setObjectName(u"label_3")
 
-        self.horizontalLayout_6.addWidget(self.label_3)
+        self.horizontalLayout_6.addWidget(self.label_3, 0, Qt.AlignLeft)
 
-        self.label_4 = QLabel(self.frame_8)
-        self.label_4.setObjectName(u"label_4")
+        self.cost = QLabel(self.frame_8)
+        self.cost.setObjectName(u"cost")
 
-        self.horizontalLayout_6.addWidget(self.label_4)
+        self.horizontalLayout_6.addWidget(self.cost, 0, Qt.AlignLeft)
 
 
-        self.verticalLayout_4.addWidget(self.frame_8)
+        self.verticalLayout_4.addWidget(self.frame_8, 0, Qt.AlignLeft)
+
+        self.frame = QFrame(self.frame_6)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_14 = QHBoxLayout(self.frame)
+        self.horizontalLayout_14.setSpacing(10)
+        self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
+        self.horizontalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.address = QLabel(self.frame)
+        self.address.setObjectName(u"address")
+
+        self.horizontalLayout_14.addWidget(self.address)
+
+        self.label = QLabel(self.frame)
+        self.label.setObjectName(u"label")
+
+        self.horizontalLayout_14.addWidget(self.label)
+
+
+        self.verticalLayout_4.addWidget(self.frame)
+
+        self.frame_15 = QFrame(self.frame_6)
+        self.frame_15.setObjectName(u"frame_15")
+        self.frame_15.setFrameShape(QFrame.StyledPanel)
+        self.frame_15.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.frame_15)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.label_9 = QLabel(self.frame_15)
+        self.label_9.setObjectName(u"label_9")
+
+        self.verticalLayout_2.addWidget(self.label_9)
+
+        self.lineEdit = QLineEdit(self.frame_15)
+        self.lineEdit.setObjectName(u"lineEdit")
+
+        self.verticalLayout_2.addWidget(self.lineEdit)
+
+
+        self.verticalLayout_4.addWidget(self.frame_15)
 
 
         self.verticalLayout_5.addWidget(self.frame_6)
@@ -643,9 +700,13 @@ class Ui_MainWindow(object):
         self.openCartBtn.setText("")
         self.toProductPageBtn.setText("")
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0440\u0437\u0438\u043d\u0430", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432:", None))
+        self.countProductsInCart.setText(QCoreApplication.translate("MainWindow", u"0", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"\u041a \u043e\u043f\u043b\u0430\u0442\u0435:", None))
+        self.cost.setText(QCoreApplication.translate("MainWindow", u"0.0", None))
+        self.address.setText(QCoreApplication.translate("MainWindow", u"\u0410\u0434\u0440\u0435\u0441:", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"255 Maine Street Brunswick ME 04011 USA", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Email:", None))
         self.makeAnOrderBtn.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c \u0437\u0430\u043a\u0430\u0437", None))
     # retranslateUi
 
