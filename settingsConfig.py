@@ -11,8 +11,7 @@ class _SettingsConfig:
             host=config("DB_HOST"),
             port=config("DB_PORT", cast=int),
             user=config("DB_USER"),
-            password=config("DB_PASSWORD"),
-            database=config("DB_NAME")
+            password=config("DB_PASSWORD")
         )
         __settings["SMTP"] = dict(
             host=config("SMTP_HOST"),
