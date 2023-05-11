@@ -309,7 +309,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
                 <string/>
                </property>
                <property name="pixmap">
-                <pixmap>:/images/car-rent.png</pixmap>
+                <pixmap resource="../resources.qrc">:/images/warehouse.png</pixmap>
                </property>
                <property name="scaledContents">
                 <bool>true</bool>
@@ -553,7 +553,7 @@ QScrollBar:horizontal {
                       <x>0</x>
                       <y>0</y>
                       <width>794</width>
-                      <height>603</height>
+                      <height>596</height>
                      </rect>
                     </property>
                     <layout class="QHBoxLayout" name="horizontalLayout_13">
@@ -646,7 +646,7 @@ QScrollBar:horizontal {
                        <enum>QFrame::Raised</enum>
                       </property>
                       <layout class="QVBoxLayout" name="verticalLayout_7">
-                       <item alignment="Qt::AlignLeft">
+                       <item>
                         <widget class="QLabel" name="label_8">
                          <property name="font">
                           <font>
@@ -656,7 +656,7 @@ QScrollBar:horizontal {
                           </font>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">margin-right: 180%;</string>
+                          <string notr="true"/>
                          </property>
                          <property name="text">
                           <string>Корзина</string>
@@ -689,7 +689,7 @@ QScrollBar:horizontal {
                          <x>0</x>
                          <y>0</y>
                          <width>470</width>
-                         <height>585</height>
+                         <height>578</height>
                         </rect>
                        </property>
                        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -987,7 +987,6 @@ QScrollBar:horizontal {
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../resources.qrc"/>
   <include location="../resources.qrc"/>
  </resources>
  <connections/>

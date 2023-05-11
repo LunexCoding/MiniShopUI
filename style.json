@@ -2,7 +2,7 @@
 	"QMainWindow":[
 		{
 			"tittle":"LunexShop",
-			"icon":":/images/car-rent.png",
+			"icon":":/images/warehouse.png",
 			"frameless": true,
 			"transluscentBg": true,
 			"sizeGrip": "sizeGrip",

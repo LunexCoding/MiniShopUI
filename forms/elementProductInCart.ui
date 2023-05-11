@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>elementProduct</class>
- <widget class="QWidget" name="elementProduct">
+ <class>elementProductCart</class>
+ <widget class="QWidget" name="elementProductCart">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>500</width>
     <height>250</height>
    </rect>
   </property>
@@ -18,13 +18,13 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>800</width>
+    <width>500</width>
     <height>250</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>800</width>
+    <width>820</width>
     <height>270</height>
    </size>
   </property>
@@ -67,7 +67,7 @@ QTextEdit {
     <widget class="QGroupBox" name="groupBox">
      <property name="minimumSize">
       <size>
-       <width>800</width>
+       <width>500</width>
        <height>250</height>
       </size>
      </property>
@@ -203,7 +203,7 @@ QTextEdit {
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_6">
                <property name="spacing">
-                <number>0</number>
+                <number>10</number>
                </property>
                <property name="leftMargin">
                 <number>10</number>
@@ -221,7 +221,7 @@ QTextEdit {
                 <widget class="QLabel" name="productName">
                  <property name="minimumSize">
                   <size>
-                   <width>350</width>
+                   <width>150</width>
                    <height>0</height>
                   </size>
                  </property>

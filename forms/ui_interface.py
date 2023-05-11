@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceyuAgei.ui'
+## Form generated from reading UI file 'interfaceYAQLJj.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -14,7 +14,6 @@ from PySide2.QtWidgets import *
 
 from Custom_Widgets.Widgets import QCustomStackedWidget
 
-import resources_rc
 import resources_rc
 
 class Ui_MainWindow(object):
@@ -252,7 +251,7 @@ class Ui_MainWindow(object):
         self.label_5 = QLabel(self.frame_5)
         self.label_5.setObjectName(u"label_5")
         self.label_5.setMaximumSize(QSize(30, 25))
-        self.label_5.setPixmap(QPixmap(u":/images/car-rent.png"))
+        self.label_5.setPixmap(QPixmap(u":/images/warehouse.png"))
         self.label_5.setScaledContents(True)
 
         self.horizontalLayout_7.addWidget(self.label_5)
@@ -395,7 +394,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaProducts = QWidget()
         self.scrollAreaProducts.setObjectName(u"scrollAreaProducts")
-        self.scrollAreaProducts.setGeometry(QRect(0, 0, 794, 603))
+        self.scrollAreaProducts.setGeometry(QRect(0, 0, 794, 596))
         self.horizontalLayout_13 = QHBoxLayout(self.scrollAreaProducts)
         self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
         self.productsLayout = QVBoxLayout()
@@ -451,9 +450,9 @@ class Ui_MainWindow(object):
         self.label_8 = QLabel(self.frame_13)
         self.label_8.setObjectName(u"label_8")
         self.label_8.setFont(font2)
-        self.label_8.setStyleSheet(u"margin-right: 180%;")
+        self.label_8.setStyleSheet(u"")
 
-        self.verticalLayout_7.addWidget(self.label_8, 0, Qt.AlignLeft)
+        self.verticalLayout_7.addWidget(self.label_8)
 
 
         self.horizontalLayout_11.addWidget(self.frame_13, 0, Qt.AlignLeft)
@@ -472,7 +471,7 @@ class Ui_MainWindow(object):
         self.scrollArea_2.setWidgetResizable(True)
         self.scrollAreaProductsInCart = QWidget()
         self.scrollAreaProductsInCart.setObjectName(u"scrollAreaProductsInCart")
-        self.scrollAreaProductsInCart.setGeometry(QRect(0, 0, 470, 585))
+        self.scrollAreaProductsInCart.setGeometry(QRect(0, 0, 470, 578))
         self.horizontalLayout_2 = QHBoxLayout(self.scrollAreaProductsInCart)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.productsCartLayout = QVBoxLayout()

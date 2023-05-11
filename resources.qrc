@@ -1,9 +1,7 @@
 <RCC>
   <qresource prefix="/">
-    <file>images/car-rent.png</file>
-    <file>images/car-rental.png</file>
-    <file>images/free-icon-car-859864.png</file>
     <file>icons/activity.svg</file>
+    <file>images/warehouse.png</file>
     <file>icons/airplay.svg</file>
     <file>icons/alert-circle.svg</file>
     <file>icons/alert-octagon.svg</file>
