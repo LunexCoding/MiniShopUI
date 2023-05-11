@@ -1,8 +1,10 @@
 import os
+import json
+import base64
 import shutil
 from pathlib import Path
-import base64
-from helpers.fileSystemExceptions import (
+
+from client.backend.helpers.fileSystemExceptions import (
     IsNotEmptyException,
     PathExistsException,
     PathExistsAsFileException,
@@ -100,15 +102,38 @@ class _FileSystem:
         shutil.copy(path, newPath)
 
     @staticmethod
-    def __convertBinaryDataToImage(blob):
-        with open("imageToSave.png", "wb") as image:
-            image.write(base64.decodebytes(blob))
+    def convertBlobToBytes(blob):
+        return base64.decodebytes(blob)
 
     @staticmethod
-    def __convertImageToBinaryData(path):
-        with open(path, 'rb') as file:
-            binaryData = file.read()
-        return binaryData
+    def convertImageToBytes(path):
+        path = Path(path)
+        if not path.exists():
+            raise PathNotFoundException(path)
+        if path.exists() and path.is_dir():
+            raise PathExistsAsDirectoryException(path)
+        return path.read_bytes()
+
+    @staticmethod
+    def readJson(path, encoding="utf-8"):
+        path = Path(path)
+        if not path.exists():
+            raise PathNotFoundException(path)
+        if path.exists() and path.is_dir():
+            raise PathExistsAsDirectoryException(path)
+        with path.open(encoding=encoding) as file:
+            return json.load(file)
+
+    @staticmethod
+    def listDir(path, suffix=None):
+        path = Path(path)
+        if not path.exists():
+            raise PathNotFoundException(path)
+        if path.exists() and path.is_file():
+            raise PathExistsAsFileException(path)
+        if suffix:
+            return list(Path(path).glob(f"*.{suffix}"))
+        return list(Path(path).glob("*"))
 
 
 fileSystem = _FileSystem()

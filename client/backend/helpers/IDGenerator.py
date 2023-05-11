@@ -3,11 +3,7 @@ import uuid
 
 class _IDGenerator:
     @staticmethod
-    def getID():
-        return str(uuid.uuid4())
-
-    @staticmethod
-    def getShortIDForOrder():
+    def getOrderID():
         return str(uuid.uuid4())[:6]
 
 

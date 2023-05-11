@@ -1,5 +1,5 @@
 import pymysql
-from settingsConfig import settingsConfig
+from client.settingsConfig import settingsConfig
 
 
 class DatabaseConnection(object):

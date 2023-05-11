@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>elementProduct</class>
- <widget class="QWidget" name="elementProduct">
+ <class>productElement</class>
+ <widget class="QWidget" name="productElement">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>470</width>
-    <height>520</height>
+    <width>400</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,13 +18,13 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>450</width>
+    <width>400</width>
     <height>500</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>470</width>
+    <width>415</width>
     <height>520</height>
    </size>
   </property>
@@ -73,7 +73,7 @@ QTextEdit {
      </property>
      <property name="maximumSize">
       <size>
-       <width>450</width>
+       <width>420</width>
        <height>500</height>
       </size>
      </property>
@@ -130,7 +130,7 @@ QTextEdit {
           <widget class="QFrame" name="frame_3">
            <property name="maximumSize">
             <size>
-             <width>450</width>
+             <width>390</width>
              <height>500</height>
             </size>
            </property>
@@ -157,13 +157,13 @@ QTextEdit {
              <widget class="QLabel" name="imageArea">
               <property name="minimumSize">
                <size>
-                <width>450</width>
+                <width>390</width>
                 <height>300</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>450</width>
+                <width>390</width>
                 <height>300</height>
                </size>
               </property>

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'elementProductHyqDkq.ui'
+## Form generated from reading UI file 'elementProductXhTNcc.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -12,21 +12,20 @@ from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
-import resources_rc
 
-class Ui_elementProduct(object):
-    def setupUi(self, elementProduct):
-        if not elementProduct.objectName():
-            elementProduct.setObjectName(u"elementProduct")
-        elementProduct.resize(470, 520)
+class Ui_productElement(object):
+    def setupUi(self, productElement):
+        if not productElement.objectName():
+            productElement.setObjectName(u"productElement")
+        productElement.resize(400, 500)
         sizePolicy = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Maximum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(elementProduct.sizePolicy().hasHeightForWidth())
-        elementProduct.setSizePolicy(sizePolicy)
-        elementProduct.setMinimumSize(QSize(450, 500))
-        elementProduct.setMaximumSize(QSize(470, 520))
-        elementProduct.setStyleSheet(u"* {\n"
+        sizePolicy.setHeightForWidth(productElement.sizePolicy().hasHeightForWidth())
+        productElement.setSizePolicy(sizePolicy)
+        productElement.setMinimumSize(QSize(400, 500))
+        productElement.setMaximumSize(QSize(415, 520))
+        productElement.setStyleSheet(u"* {\n"
 "	color: #fff;\n"
 "	background-color: #2a2f38;\n"
 "}\n"
@@ -43,13 +42,13 @@ class Ui_elementProduct(object):
 "QTextEdit {\n"
 "	font-size: 10px;\n"
 "}")
-        self.verticalLayout_2 = QVBoxLayout(elementProduct)
+        self.verticalLayout_2 = QVBoxLayout(productElement)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 20, 20)
-        self.groupBox = QGroupBox(elementProduct)
+        self.groupBox = QGroupBox(productElement)
         self.groupBox.setObjectName(u"groupBox")
         self.groupBox.setMinimumSize(QSize(0, 0))
-        self.groupBox.setMaximumSize(QSize(450, 500))
+        self.groupBox.setMaximumSize(QSize(420, 500))
         self.groupBox.setStyleSheet(u"border: none")
         self.horizontalLayout = QHBoxLayout(self.groupBox)
         self.horizontalLayout.setSpacing(0)
@@ -65,7 +64,7 @@ class Ui_elementProduct(object):
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.frame_3 = QFrame(self.frame_2)
         self.frame_3.setObjectName(u"frame_3")
-        self.frame_3.setMaximumSize(QSize(450, 500))
+        self.frame_3.setMaximumSize(QSize(390, 500))
         self.frame_3.setFrameShape(QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Raised)
         self.verticalLayout_4 = QVBoxLayout(self.frame_3)
@@ -73,8 +72,8 @@ class Ui_elementProduct(object):
         self.verticalLayout_4.setContentsMargins(0, 0, 0, 10)
         self.imageArea = QLabel(self.frame_3)
         self.imageArea.setObjectName(u"imageArea")
-        self.imageArea.setMinimumSize(QSize(450, 300))
-        self.imageArea.setMaximumSize(QSize(450, 300))
+        self.imageArea.setMinimumSize(QSize(390, 300))
+        self.imageArea.setMaximumSize(QSize(390, 300))
 
         self.verticalLayout_4.addWidget(self.imageArea)
 
@@ -122,7 +121,7 @@ class Ui_elementProduct(object):
 "  background-image: linear-gradient(#464d55, #25292e);\n"
 "  border-radius: 8px;\n"
 "  border-width: 0;\n"
-"  box-shadow: 0 10px 20px rgba(0, 0, 0, .1.png),0 3px 6px rgba(0, 0, 0, .05);\n"
+"  box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);\n"
 "  box-sizing: border-box;\n"
 "  color: #fff;\n"
 "  cursor: pointer;\n"
@@ -132,7 +131,7 @@ class Ui_elementProduct(object):
 "  font-size: 18px;\n"
 "  height: 52px;\n"
 "  justify-content: center;\n"
-"  line-height: 1.png;\n"
+"  line-height: 1;\n"
 "  margin: 0;\n"
 "  outline: none;\n"
 "  overflow: hidden;\n"
@@ -150,7 +149,7 @@ class Ui_elementProduct(object):
 "}\n"
 "\n"
 "#addToCartBtn:hover {\n"
-"  box-shadow: rgba(0, 1.png, 0, .2) 0 2px 8px;\n"
+"  box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;\n"
 "  opacity: .85;\n"
 "}\n"
 "\n"
@@ -193,18 +192,18 @@ class Ui_elementProduct(object):
         self.verticalLayout_2.addWidget(self.groupBox)
 
 
-        self.retranslateUi(elementProduct)
+        self.retranslateUi(productElement)
 
-        QMetaObject.connectSlotsByName(elementProduct)
+        QMetaObject.connectSlotsByName(productElement)
     # setupUi
 
-    def retranslateUi(self, elementProduct):
-        elementProduct.setWindowTitle(QCoreApplication.translate("elementProduct", u"Form", None))
+    def retranslateUi(self, productElement):
+        productElement.setWindowTitle(QCoreApplication.translate("productElement", u"Form", None))
         self.groupBox.setTitle("")
         self.imageArea.setText("")
-        self.productName.setText(QCoreApplication.translate("elementProduct", u"TextLabel", None))
-        self.productDescription.setText(QCoreApplication.translate("elementProduct", u"TextLabel", None))
-        self.productCost.setText(QCoreApplication.translate("elementProduct", u"TextLabel", None))
-        self.addToCartBtn.setText(QCoreApplication.translate("elementProduct", u"\u0412 \u043a\u043e\u0440\u0437\u0438\u043d\u0443", None))
+        self.productName.setText(QCoreApplication.translate("productElement", u"TextLabel", None))
+        self.productDescription.setText(QCoreApplication.translate("productElement", u"TextLabel", None))
+        self.productCost.setText(QCoreApplication.translate("productElement", u"TextLabel", None))
+        self.addToCartBtn.setText(QCoreApplication.translate("productElement", u"\u0412 \u043a\u043e\u0440\u0437\u0438\u043d\u0443", None))
     # retranslateUi
 

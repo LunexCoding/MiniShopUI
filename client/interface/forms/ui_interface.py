@@ -14,7 +14,6 @@ from PySide2.QtWidgets import *
 
 from Custom_Widgets.Widgets import QCustomStackedWidget
 
-import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):

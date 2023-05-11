@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'elementProductInCartKVPmbP.ui'
+## Form generated from reading UI file 'elementProductInCartDrgdPH.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -12,21 +12,20 @@ from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
-import resources_rc
 
-class Ui_elementProductCart(object):
-    def setupUi(self, elementProductCart):
-        if not elementProductCart.objectName():
-            elementProductCart.setObjectName(u"elementProductCart")
-        elementProductCart.resize(500, 250)
+class Ui_shoppingCartElement(object):
+    def setupUi(self, shoppingCartElement):
+        if not shoppingCartElement.objectName():
+            shoppingCartElement.setObjectName(u"shoppingCartElement")
+        shoppingCartElement.resize(500, 250)
         sizePolicy = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Maximum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(elementProductCart.sizePolicy().hasHeightForWidth())
-        elementProductCart.setSizePolicy(sizePolicy)
-        elementProductCart.setMinimumSize(QSize(500, 250))
-        elementProductCart.setMaximumSize(QSize(820, 270))
-        elementProductCart.setStyleSheet(u"* {\n"
+        sizePolicy.setHeightForWidth(shoppingCartElement.sizePolicy().hasHeightForWidth())
+        shoppingCartElement.setSizePolicy(sizePolicy)
+        shoppingCartElement.setMinimumSize(QSize(500, 250))
+        shoppingCartElement.setMaximumSize(QSize(820, 270))
+        shoppingCartElement.setStyleSheet(u"* {\n"
 "	color: #fff;\n"
 "	background-color: #2a2f38;\n"
 "}\n"
@@ -43,10 +42,10 @@ class Ui_elementProductCart(object):
 "QTextEdit {\n"
 "	font-size: 10px;\n"
 "}")
-        self.verticalLayout_2 = QVBoxLayout(elementProductCart)
+        self.verticalLayout_2 = QVBoxLayout(shoppingCartElement)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(0, 0, 20, 20)
-        self.groupBox = QGroupBox(elementProductCart)
+        self.groupBox = QGroupBox(shoppingCartElement)
         self.groupBox.setObjectName(u"groupBox")
         self.groupBox.setMinimumSize(QSize(500, 250))
         self.groupBox.setMaximumSize(QSize(800, 250))
@@ -133,17 +132,17 @@ class Ui_elementProductCart(object):
         self.verticalLayout_2.addWidget(self.groupBox)
 
 
-        self.retranslateUi(elementProductCart)
+        self.retranslateUi(shoppingCartElement)
 
-        QMetaObject.connectSlotsByName(elementProductCart)
+        QMetaObject.connectSlotsByName(shoppingCartElement)
     # setupUi
 
-    def retranslateUi(self, elementProductCart):
-        elementProductCart.setWindowTitle(QCoreApplication.translate("elementProductCart", u"Form", None))
+    def retranslateUi(self, shoppingCartElement):
+        shoppingCartElement.setWindowTitle(QCoreApplication.translate("shoppingCartElement", u"Form", None))
         self.groupBox.setTitle("")
         self.imageArea.setText("")
-        self.productName.setText(QCoreApplication.translate("elementProductCart", u"TextLabel", None))
-        self.productCost.setText(QCoreApplication.translate("elementProductCart", u"TextLabel", None))
+        self.productName.setText(QCoreApplication.translate("shoppingCartElement", u"TextLabel", None))
+        self.productCost.setText(QCoreApplication.translate("shoppingCartElement", u"TextLabel", None))
         self.deleteProductFromCartBtn.setText("")
     # retranslateUi
 
