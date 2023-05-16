@@ -22,7 +22,7 @@ class MainWindow(QMainWindow):
         super().__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        loadJsonStyle(self, self.ui, jsonFiles=["client/interface/style.json"])
+        loadJsonStyle(self, self.ui, jsonFiles=["interface/style.json"])
         self.show()
 
         self.__order = Order(g_IDGenerator.getOrderID())

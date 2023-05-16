@@ -1,0 +1,40 @@
+{
+	"QMainWindow":[
+		{
+			"tittle":"LunexShop",
+			"icon":":/images/warehouse.png",
+			"frameless": true,
+			"transluscentBg": true,
+			"sizeGrip": "sizeGrip",
+			"navigation":[
+				{
+					"minimize":"minimizeBtn",
+					"close": "closeBtn",
+					"restore":[
+						{	
+							"buttonName": "restoreBtn",
+							"normalIcon": ":/icons/square.svg",
+							"maximizedIcon": ":/icons/copy.svg"
+						}
+					],
+					"moveWindow": "headerContainer",
+					"tittleBar": "headerContainer"
+				}
+			]
+		}
+	],
+	"QStackedWidget":[
+		{
+			"name":"mainPages",
+			"navigation":[
+				{
+					"navigationButtons": [
+						{
+                            "toFindOrderPageBtn": "pageFindOrder"
+						}
+					]
+				}
+			]
+        }
+	]
+}
