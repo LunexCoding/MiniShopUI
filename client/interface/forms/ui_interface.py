@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceYAQLJj.ui'
+## Form generated from reading UI file 'interfaceYCppyS.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -544,15 +544,15 @@ class Ui_MainWindow(object):
         self.horizontalLayout_14.setSpacing(10)
         self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
         self.horizontalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.label_4 = QLabel(self.frame)
+        self.label_4.setObjectName(u"label_4")
+
+        self.horizontalLayout_14.addWidget(self.label_4)
+
         self.address = QLabel(self.frame)
         self.address.setObjectName(u"address")
 
         self.horizontalLayout_14.addWidget(self.address)
-
-        self.label = QLabel(self.frame)
-        self.label.setObjectName(u"label")
-
-        self.horizontalLayout_14.addWidget(self.label)
 
 
         self.verticalLayout_4.addWidget(self.frame)
@@ -569,10 +569,10 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.label_9)
 
-        self.lineEdit = QLineEdit(self.frame_15)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.inputEmail = QLineEdit(self.frame_15)
+        self.inputEmail.setObjectName(u"inputEmail")
 
-        self.verticalLayout_2.addWidget(self.lineEdit)
+        self.verticalLayout_2.addWidget(self.inputEmail)
 
 
         self.verticalLayout_4.addWidget(self.frame_15)
@@ -702,8 +702,8 @@ class Ui_MainWindow(object):
         self.countProductsInCart.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"\u041a \u043e\u043f\u043b\u0430\u0442\u0435:", None))
         self.cost.setText(QCoreApplication.translate("MainWindow", u"0.0", None))
-        self.address.setText(QCoreApplication.translate("MainWindow", u"\u0410\u0434\u0440\u0435\u0441:", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"255 Maine Street Brunswick ME 04011 USA", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"\u0410\u0434\u0440\u0435\u0441:", None))
+        self.address.setText(QCoreApplication.translate("MainWindow", u"255 Maine Street Brunswick ME 04011 USA", None))
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"Email:", None))
         self.makeAnOrderBtn.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0444\u043e\u0440\u043c\u0438\u0442\u044c \u0437\u0430\u043a\u0430\u0437", None))
     # retranslateUi

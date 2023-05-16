@@ -21,7 +21,7 @@ class SqlQueries:
         CREATE TABLE IF NOT EXISTS `storage`.`orders` (
         `id` VARCHAR(6) NOT NULL,
         `cost` FLOAT NOT NULL,
-        `productIDs` JSON NOT NULL,
+        `productIDs` TEXT(1000) NOT NULL,
         PRIMARY KEY (`id`));
         """
 
@@ -40,4 +40,13 @@ class SqlQueries:
             NOT EXISTS (
                 SELECT name FROM `storage`.`products` WHERE name = %(name)s
             )
+        """
+
+    @staticmethod
+    def insertOrder(orderID, cost, productIDs):
+        return """
+        INSERT INTO `storage`.`orders`
+            (id, cost, productIDs)
+        VALUES 
+            (%(orderID)s, %(cost)s, %(productIDs)s);
         """

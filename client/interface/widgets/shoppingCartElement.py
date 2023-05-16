@@ -27,5 +27,7 @@ class ShoppingCartElement(QWidget):
         pixmap = QtGui.QPixmap.fromImage(img.scaled(size))
         self.ui.imageArea.setPixmap(pixmap)
 
+        self.ui.deleteProductFromCartBtn.clicked.connect(self.delete)
+
     def delete(self):
-        self._addToCart.emit(self._productID)
+        self._delete.emit(self._productID)

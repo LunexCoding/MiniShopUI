@@ -828,14 +828,14 @@ QScrollBar:horizontal {
                               <number>0</number>
                              </property>
                              <item>
-                              <widget class="QLabel" name="address">
+                              <widget class="QLabel" name="label_4">
                                <property name="text">
                                 <string>Адрес:</string>
                                </property>
                               </widget>
                              </item>
                              <item>
-                              <widget class="QLabel" name="label">
+                              <widget class="QLabel" name="address">
                                <property name="text">
                                 <string>255 Maine Street Brunswick ME 04011 USA</string>
                                </property>
@@ -873,7 +873,7 @@ QScrollBar:horizontal {
                               </widget>
                              </item>
                              <item>
-                              <widget class="QLineEdit" name="lineEdit"/>
+                              <widget class="QLineEdit" name="inputEmail"/>
                              </item>
                             </layout>
                            </widget>
